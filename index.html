@@ -8,18 +8,22 @@
     <title>Uncertainty</title>
 </head>
 <body>
-
+    <div class="banner">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <a href="#">Chapters</a>
+            <div class="dropdown-content">
+                <a href="#">Chapter 1</a>
+                <a href="#">Chapter 2</a>
+                <a href="#">Chapter 3</a>
+                <!-- Add more chapters as needed -->
+            </div>
+        </div>
+    </div>
+    
     <h1>Hello, World!</h1>
     <div id="markdown-content"></div>
 
-    <script>
-        // Replace 'your-markdown-file.md' with the path to your Markdown file
-        fetch('chapter1/chapter1.md')
-            .then(response => response.text())
-            .then(markdown => {
-                document.getElementById('markdown-content').innerHTML = marked(markdown);
-            });
-    </script>
 
 </body>
 </html>

@@ -4,3 +4,40 @@ body {
     background-color: black;
     color: white; /* Set text color to white for better visibility on a black background */
 }
+
+
+.banner {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
